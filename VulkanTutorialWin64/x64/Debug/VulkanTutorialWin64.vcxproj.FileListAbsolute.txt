@@ -1,0 +1,2 @@
+O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\x64\Debug\VulkanTutorialWin64.exe
+O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\x64\Debug\VulkanTutorialWin64.pdb

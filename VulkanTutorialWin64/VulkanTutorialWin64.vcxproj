@@ -100,7 +100,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\dependencies\include\vulkan;O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\dependencies\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\dependencies\include\vulkan;O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\dependencies\include\;O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,7 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\dependencies\include\vulkan;O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\dependencies\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\dependencies\include\vulkan;O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\dependencies\include\;O:\GraphicsProgramming\VulkanTutorial\VulkanTutorialWin64\headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,7 +145,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="headers\app.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="headers\app.h" />
+    <ClInclude Include="headers\window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\basic_shader.frag" />
+    <None Include="shaders\basic_shader.vert" />
+    <None Include="src\compile.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
